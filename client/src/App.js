@@ -31,17 +31,17 @@ state = {
             <table>
               <thead>
                 <tr>
-                  <th>Price</th>
                   <th>Start Date</th>
                   <th>End Date</th>
+                  <th>Price</th>
                 </tr>
               </thead>
               <tbody>
                 {this.state.data.prices.map((item, index) => (
                   <tr key={index}>
-                    <td>{item.price}</td>
                     <td>{new Date(item.startDate).toLocaleString()}</td>
                     <td>{new Date(item.endDate).toLocaleString()}</td>
+                    <td>{item.price}</td>
                   </tr>
                 ))}
               </tbody>
