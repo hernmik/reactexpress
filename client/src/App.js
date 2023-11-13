@@ -28,8 +28,10 @@ state = {
     return (
       <div className="App">
         <div className="App-intro">
+        <h1>Hourly Electricity Prices</h1>
           {this.state.data && 
             <table>
+              
               <thead>
                 <tr>
                   <th>Start Date</th>
