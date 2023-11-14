@@ -28,7 +28,7 @@ state = {
     return (
       <div className="App">
         <div className="App-intro">
-        <h1>Hourly Electricity Prices</h1>
+        <h1><strong>Hourly Electricity Prices</strong></h1>
           {this.state.data && (
             <Table striped bordered hover className="table-dark">
               
