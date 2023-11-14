@@ -34,16 +34,16 @@ state = {
               
               <thead>
                 <tr>
-                  <th>Start Date</th>
-                  <th>End Date</th>
+                  <th>Start Date and Hour</th>
+                  
                   <th>Price</th>
                 </tr>
               </thead>
               <tbody>
                 {this.state.data.prices.map((item, index) => (
                   <tr key={index}>
-                    <td>{new Date(item.startDate).toLocaleString()}</td>
-                    <td>{new Date(item.endDate).toLocaleString()}</td>
+                    <td>{`${new Date(item.startDate).toLocaleDateString()} ${new Date(item.startDate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })} - ${new Date(item.endDate).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' })}`}</td>
+                
                     <td>{item.price}</td>
                   </tr>
                 ))}
