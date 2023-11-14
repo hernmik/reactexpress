@@ -30,7 +30,7 @@ state = {
         <div className="App-intro">
         <h1>Hourly Electricity Prices</h1>
           {this.state.data && (
-            <Table striped bordered hover>
+            <Table striped bordered hover className="table-dark">
               
               <thead>
                 <tr>
